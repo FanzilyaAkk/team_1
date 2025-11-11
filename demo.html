@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд по стилям</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .demo-section {
+            margin-bottom: 80px;
+        }
+
+        .demo-section-title {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--color-light-gray);
+        }
+
+        .demo-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid var(--color-light-gray);
+            border-radius: 8px;
+        }
+
+        .demo-label {
+            display: inline-block;
+            padding: 4px 12px;
+            margin-bottom: 10px;
+            background-color: var(--color-light-yellow);
+            color: var(--color-primary);
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 4px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .color-card {
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-sample {
+            height: 120px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 15px;
+            background-color: white;
+        }
+
+        .color-name {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .color-code {
+            font-size: 14px;
+            color: var(--color-dark-gray);
+            font-family: monospace;
+        }
+
+        .button-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .header {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: var(--color-light-gray);
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="header">
+        <h1>Гайд по стилям</h1>
+        <p class="body-01">Руководство по стилям для практики. <b>Если вы в чём-то сомневаетесь, спросите своего лида.</b> </p>
+    </div>
+
+    <div class="demo-container">
+        
+        <!-- Типографика -->
+        <section class="demo-section">
+            <h2 class="demo-section-title">Typography / Типографика</h2>
+             <div class="body-01">Шрифт проекта (Sen) не поддерживает кириллицу, пишите латиницей</div>
+            <div class="demo-item">
+                <span class="demo-label">Display</span>
+                <div class="display">Display Text - 56px / 64px</div>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Heading H1</span>
+                <h1>Heading H1 - 48px / 64px</h1>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Heading H2</span>
+                <h2>Heading H2 - 36px / 48px</h2>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Heading H3</span>
+                <h3>Heading H3 - 28px / 36px</h3>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Heading H4</span>
+                <h4>Heading H4 - 24px / 32px</h4>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Heading H5</span>
+                <h5>Heading H5 - 20px / 32px</h5>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Heading H6</span>
+                <h6>Heading H6 - 16px / 24px</h6>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Body 01</span>
+                <p class="body-01">Body 01 - Regular 16px / 28px. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Body 02</span>
+                <p class="body-02">Body 02 - Regular 14px / 20px. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Label</span>
+                <p class="label">Label - Medium 14px / 20px</p>
+            </div>
+        </section>
+
+        <!-- Цвета -->
+        <section class="demo-section">
+            <h2 class="demo-section-title">Color Palette / Цветовая палитра</h2>
+            
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-sample bg-primary"></div>
+                    <div class="color-info">
+                        <div class="color-name">Primary (color-primary)</div>
+                        <div class="color-code">#232536</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample bg-accent"></div>
+                    <div class="color-info">
+                        <div class="color-name">Accent (color-accent);</div>
+                        <div class="color-code">#FFD050</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample bg-purple"></div>
+                    <div class="color-info">
+                        <div class="color-name">Purple (color-purple)</div>
+                        <div class="color-code">#592EA9</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample bg-dark-gray"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Gray (color-dark-gray)</div>
+                        <div class="color-code">#4C4C4C</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample bg-light-gray"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Gray (color-light-gray)</div>
+                        <div class="color-code">#F4F4F4</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample bg-light-purple"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Purple (color-light-purple)</div>
+                        <div class="color-code">#F4F0F8</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample bg-light-yellow"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Yellow (color-light-yellow)</div>
+                        <div class="color-code">#FBF6EA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кнопки -->
+        <section class="demo-section">
+            <h2 class="demo-section-title">Buttons / Кнопки</h2>
+            <div class="body-01">Обратите внимание: кнопки имеют анимацию и меняют свой цвет при hover</div>
+            <div class="demo-item">
+                <span class="demo-label">Primary Button</span>
+                <div class="button-grid">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <a href="#" class="btn btn-primary">Primary Link</a>
+                </div>
+            </div>
+
+            <div class="demo-item">
+                <span class="demo-label">Secondary Button</span>
+                <div class="button-grid">
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <a href="#" class="btn btn-secondary">Secondary Link</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Примеры использования -->
+        <section class="demo-section">
+            <h2 class="demo-section-title">Usage Examples / Примеры использования</h2>
+            
+            <div class="demo-item">
+                <h4 class="heading-h4">Как использовать классы типографики:</h4>
+                <pre style="background: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto;"><code>&lt;h1 class="heading-h1"&gt;Заголовок&lt;/h1&gt;
+&lt;p class="body-01"&gt;Основной текст&lt;/p&gt;
+&lt;span class="label"&gt;Метка&lt;/span&gt;</code></pre>
+            </div>
+
+            <div class="demo-item">
+                <h4 class="heading-h4">Как использовать цвета:</h4>
+                <pre style="background: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto;"><code>&lt;div class="bg-primary text-light-gray"&gt;
+    Тёмный фон со светлым текстом
+&lt;/div&gt;
+
+&lt;button class="btn btn-primary"&gt;Кнопка&lt;/button&gt;</code></pre>
+            </div>
+
+            <div class="demo-item">
+                <h4 class="heading-h4">CSS переменные:</h4>
+                <pre style="background: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto;"><code>var(--color-primary)
+var(--color-accent)
+var(--color-purple)
+var(--font-family)</code></pre>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer (это вам не нужно, он другой) -->
+    <footer style="background-color: var(--color-primary); color: white; text-align: center; padding: 30px 20px; margin-top: 60px;">
+        <p class="body-02" style="color: var(--color-light-gray);">Это пример футера. Он находится внизу страницы, имеет <pre><code>class="body-02" и color --color-light-gray</code></pre></p>
+    </footer>
+
+</body>
+</html>
