@@ -122,6 +122,12 @@ h6 {
   line-height: 24px;
 }
 
+.purple-header {
+  background-color: var(--color-light-purple);
+  padding: 60px 20px;
+  text-align: center;
+}
+
 .body-01 {
   font-family: var(--font-family);
   font-weight: 400;
@@ -227,3 +233,136 @@ h6 {
 
 }
 
+.about-container{
+    margin:0 auto;
+    text-align: center;
+    padding-top: 128px;
+    max-width: 768px;
+    width: 100%;
+    height: 176px;
+}
+.about-container h1{
+    line-height: 24px;
+}
+.about-container h3{
+    line-height: 12px;
+}
+
+.about-container p{
+    color: var(--color-light-gray);
+}
+
+.feedback{
+    margin: auto;
+    width: 768px;
+    height: 500px;
+    padding: 70px 0;
+    background: white;
+    border: 1px;
+}
+.feedback .container {
+    width: 768px;
+    height: 76px;
+    margin: 0 auto;
+    border: 1px;
+    border-radius: 2px;
+    gap: 10px;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.feedback form input,
+.feedback form textarea {
+    background: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    box-sizing: border-box;
+}
+.feedback form button {
+    background: var(--color-light-yellow); 
+    color: #333; 
+    border: none;
+    padding: 0; 
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 600; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; 
+    height: 64px; 
+    letter-spacing: 0.5px; 
+}
+
+.feedback form button:active {
+    background: #FFB300; 
+}
+.query-group {
+    position: relative;
+    width: 100%;
+}
+
+.query-group input {
+    padding-right: 50px; 
+    cursor: pointer;
+}
+
+.query-group::after {
+    content: '⌵';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    color: #333;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.info {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-purple);
+    color: white;
+    max-width: 768px;
+    height: 176px;
+}
+.info-divider{
+    width: 294px;
+    height: 1px;
+    background: white;
+    border: 1px;
+    opacity: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.body-01{
+    margin-bottom: 10px;
+}
+.social{
+    opacity: 60%;
+}
+.info-column {
+    max-width: 294px;
+    height: 144px;
+    gap: 42px;
+    text-align: justify;
+}
+.info-item {
+    margin-bottom: 10px;
+}
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
